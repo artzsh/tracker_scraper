@@ -1,0 +1,19 @@
+{
+  "matches": [
+    {
+      "match_id": "example-001",
+      "act_id": "replace-with-act-id-1",
+      "started_at": "2026-05-31T18:30:00Z",
+      "map": "Ascent",
+      "winning_team": "blue",
+      "participants": [
+        {"riot_id": "AR artzsh#AMBER", "team": "blue", "agent": "Omen", "role": "controller"},
+        {"riot_id": "aww#dead", "team": "blue", "agent": "Jett", "role": "duelist"},
+        {"riot_id": "БЫК ОСЕМЕНИТЕЛЬ#JOPAA", "team": "blue", "agent": "Sova", "role": "initiator"},
+        {"riot_id": "BabyCute#wifey", "team": "blue", "agent": "Killjoy", "role": "sentinel"},
+        {"riot_id": "BECHA#NRG", "team": "blue", "agent": "Breach", "role": "initiator"},
+        {"riot_id": "Opponent One#TEST", "team": "red", "agent": "Omen", "role": "controller"}
+      ]
+    }
+  ]
+}
