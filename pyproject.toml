@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tracker-scraper"
+version = "0.1.0"
+description = "Offline Valorant team match analytics from authorized exports"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+tracker-report = "tracker_scraper.cli:main"
+tracker-import-html = "tracker_scraper.import_cli:main"
+tracker-import-mhtml-folder = "tracker_scraper.mhtml_cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

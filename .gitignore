@@ -216,3 +216,11 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Local Valorant analytics inputs and generated reports
+reports/
+team.json
+data/matches.json
+html/
+data/team_matches.csv
+mhtml/
