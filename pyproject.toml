@@ -11,6 +11,8 @@ dependencies = []
 
 [project.scripts]
 tracker-report = "tracker_scraper.cli:main"
+tracker-import-html = "tracker_scraper.import_cli:main"
+tracker-import-mhtml-folder = "tracker_scraper.mhtml_cli:main"
 
 [tool.setuptools]
 package-dir = {"" = "src"}

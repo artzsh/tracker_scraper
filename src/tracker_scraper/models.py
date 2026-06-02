@@ -40,6 +40,19 @@ class Match:
     winning_team: str
     participants: tuple[Participant, ...]
 
+    def to_dict(self) -> dict[str, Any]:
+        return {
+            "match_id": self.match_id,
+            "act_id": self.act_id,
+            "started_at": self.started_at.isoformat(),
+            "map": self.map_name,
+            "winning_team": self.winning_team,
+            "participants": [
+                {"riot_id": participant.riot_id, "team": participant.team, "agent": participant.agent, "role": participant.role}
+                for participant in self.participants
+            ],
+        }
+
     @classmethod
     def from_dict(cls, raw: dict[str, Any]) -> "Match":
         participants = tuple(
